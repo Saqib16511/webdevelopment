@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "D:/laragon/www/fatherstock"
+		},
+		{
+			"path": "D:/laragon/www/app"
+		},
+		{
+			"path": "D:/laragon/www/core"
+		},
+		{
+			"path": "D:/laragon/www/laravel-admin"
+		}
+	],
+	"settings": {}
+}

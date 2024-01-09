@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+ <html lang="english">
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Complain Foam</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!---HEADER-->
+        <div class="header">
+            <button  class="closebtn" onclick="closeNav()">☰ </button>
+            <button  class="openbtn" onclick="openNav()">☰</button>
+               <div><h2>COMPLAINT MANAGEMENT SYSTEM</h2></div>
+        </div>
+        <!--MAIN-->
+        <div class="main">
+        <div class="sidebar" id="mySidebar">
+                    <div class="side_content">
+                        <div style="color: #707787;margin-top: 20px;">
+                            <img src="https://png.pngtree.com/png-vector/20190528/ourmid/pngtree-deer-silhouette-vector-png-image_1109416.jpg" style="width: 100px; border-radius: 50px;" />
+                            <p style="color: #afb4bee8;font-size: large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">John Smith</p>
+                        </Div>
+                        <div>
+                            <ul>
+                                <li><i class="fa fa-dashboard"></i>Dashboard</li>
+                                <li><i class="fa-solid fa-gears"></i>Account Setting</li>
+                                <li><i class='fas fa-book'></i>Lodge Complaint</Dli>
+                                <li><i class="fa-solid fa-square-poll-horizontal"></i>Complaint History</li>
+                                </ul>
+                        </div>
+                        <div class="button">
+                            <button class="logbtn">Logout</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="centerbd">
+                        <div class="main_heading">
+                            <h2 style="margin: 10px; margin-top: 30px;  color: #867E74; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.267);">Profile info</h2></div>
+                        <form>
+                            <div class="table">
+                                <table>
+                                    <tr>
+                                        <td style="border: none; " colspan="4">
+                                            <div>
+                                                <h3><i class="fa-solid fa-user"></i>John Smith's Profile</h2>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 10px; border: none;" colspan="4">
+                                            <div>   
+                                                <span style="font-weight: bold;">Last Update at : 2020-05-08 22:16:22</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <label>Name</label>
+                                                <input type="text" required placeholder="Name"/>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <label>User Email</label>
+                                                <input type="email" required placeholder="Email"/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <label>Contact</label>
+                                            <input type="tel" required placeholder="Contact"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <label>Address</label>
+                                            <textarea required placeholder="Address" rows="2" cols="23"></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <label>State</label>
+                                            <select>
+                                                <option>Sindh</option>
+                                                <option>Punjab</option>
+                                                <option>Balochistan</option>
+                                                <option>KPK</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <label>Country</label>
+                                            <select>
+                                                <option disabled selected>Country</option>
+                                                <option>Pakistan</option>
+                                                <option>India</option>
+                                                <option>Canada</option>
+                                                <option>America</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <label>Pincode</label>
+                                            <input type="number" required placeholder="XXXX"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <label>Reg Date</label>
+                                            <input type="datetime-local" required/>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="submitdiv">
+                                            <button class="subbtn" type="submit">Submit</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+        </div>
+        <!--------FOOTER------------->
+        <footer>
+                <p>c 2020 CMS All rights reserved</p>
+        </footer>
+    </div>
+</body>
+    <script>
+        const openBtn = document.querySelector(".openbtn");
+        const closeBtn = document.querySelector(".closebtn");
+            function openNav() {
+                    document.getElementById("mySidebar").style.display = "flex";
+                    openBtn.style.display = "none";
+                    closeBtn.style.display = "block";
+    }
+            function closeNav() {
+                    document.getElementById("mySidebar").style.display = "none";
+                    openBtn.style.display = "block";
+                    closeBtn.style.display = "none";
+    }
+    </script>
+    
+ </html>

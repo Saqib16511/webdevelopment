@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;    
+}
+.header{
+    display: flex;
+    justify-content: start;
+    background-color: #FFFFFF;
+    align-items: baseline;
+    padding: 20px;
+    font-weight: bold;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: #F8F8F8;
+    justify-content: center;
+    flex-grow: 1;
+}
+.sidebar {
+    flex: 1 1 15vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #283045;
+    z-index: 1;
+    align-items: flex-start;
+    box-shadow: 3px 0px 0px 0 rgba(0,0,0,.5);
+    padding-left: 20px;
+}
+.sidebar li{
+    line-height: 40px;
+    list-style: none;
+    color: #9ba4b8e8;
+    margin-top: 35px;
+    font-size: large;
+}
+.sidebar li:hover{
+    border-bottom:1px solid blueviolet;
+    cursor: pointer;
+}
+.side_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+i{
+    margin-right: 10px;
+}
+.centerbd{
+    flex: 1 1 80vw;
+    background-color: #F8F8F8;
+    margin-right: 85px;
+}
+.main_heading{
+    width: 95%;
+    margin-inline: auto;
+}
+table{
+    width: 100%;
+    background-color: #FFFFFF;
+    margin: 40px;
+    color: #4D4B48;
+    border: 1px;
+    border-radius: 10px;
+    padding-left: 5px;
+    box-shadow: 2px 2px 5px rgba(107, 98, 98, 0.404), -1px -1px 5px rgba(107, 98, 98, 0.404);
+    font-size: large;
+}
+table td{
+    border-bottom: 1px solid #F4F4F4;
+    width: calc(100% - 50%);
+    padding: 24px 0;
+}
+td div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+}
+table,td{
+    border-collapse: collapse;
+}
+label{
+    display: flex;
+    align-items: center;
+}
+input{
+    border:1px solid rgb(201, 196, 196);
+    padding: 12px;
+    outline: none;
+    border-radius: 5px;
+    font-size: large;
+    width: 60%;
+}
+select{
+    border:1px solid rgb(201, 196, 196);
+    padding: 12px;
+    outline: none;
+    border-radius: 5px;
+    font-size: large;
+    width: 60%;
+}
+textarea{
+    border:1px solid rgb(201, 196, 196);
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+    font-size: large;
+    outline: none;
+    width: 60%;
+}
+.closebtn{
+    display: none;
+    border: none;
+    border-radius: none;
+    font-size: 25px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.openbtn{
+    border: none;
+    border-radius: none;
+    font-size: 25px;
+    background-color: #FFFFFF;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.logbtn{
+    padding: 10px;
+    background-color:#D0202D;
+    border: 1px;
+    border-radius: 10px;
+    color: white;
+    font-size: medium;
+}
+.logbtn:hover{
+    box-shadow: 1px 1px 5px rgb(173, 167, 165), -1px -1px 5px rgb(173, 167, 165);
+    cursor: pointer;
+}
+.button{
+    margin-top: 15px;
+}
+.subbtn{
+    padding: 10px;
+    background-color:#D0202D;
+    border: 1px;
+    border-radius: 10px;
+    color: white;
+    font-size: medium;
+}
+.subbtn:hover{
+    box-shadow: 2px 2px 5px rgb(173, 167, 165), -2px -2px 5px rgb(173, 167, 165);
+    cursor: pointer;
+}
+footer{
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: 5vh;
+    font-size: large;
+    box-shadow: 2px 2px 5px rgb(173, 167, 165), -2px -2px 5px rgb(173, 167, 165);
+}
+@media (max-width: 1288px) {
+    .sidebar{
+        flex: 0 0 20vw;
+    }
+    .sidebar li{
+        font-size: medium; 
+    }
+    td div {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-inline: auto;
+        flex-direction: column;
+    }
+    .submitdiv{
+        display: flex;
+        flex-direction: row;
+    }
+    input{
+        width: auto;
+    }
+    textarea{
+        width: auto;
+    }
+    select{
+        width: auto;
+    }
+}
+@media (max-width: 914px){
+    .sidebar{
+        flex: 0 0 25vw;
+    }
+}
+@media (max-width: 839px){
+    .sidebar{
+        flex: 0 0 25vw;
+    }
+    tr{
+        display: flex;
+        flex-direction: column;
+    }
+    table td{
+        width: 100%;
+    }
+    table{
+        font-size: medium;
+    }
+    footer{
+        font-size: medium;
+    }
+    .centerbd{
+        margin-right: 85px;
+    }
+}
+@media (max-width: 701px){
+    .sidebar{
+        position: fixed;
+        left: 0;
+        height: 100%;
+        top: 73px;
+    }
+    .sidebar li{
+        font-size: small;
+        margin: 20px 10px;
+    }
+    .header{
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        font-size: small;
+    }
+    .main_heading{
+        padding-top: 80px;
+        font-size: medium;
+        width: 90%;
+    }
+    .logbtn{
+        font-size: small;
+    }
+    table{
+        font-size: large;
+    }
+    input{
+        font-size: medium;
+    }
+}
+@media (max-width: 549px){
+    .header{
+        font-size: small;
+    }
+    .main_heading{
+        font-size: small;
+        width: 80%;
+    }
+    footer{
+        font-size: small;
+    }
+}
+@media (max-width: 460px){
+    .header{
+        font-size: 12px;
+    }
+    table{
+        font-size: medium;
+    }
+    input{
+        font-size: small;
+    }
+    .subbtn{
+        font-size: smaller;
+    }
+}
+@media (max-width: 430px){
+    .header{
+        font-size: 10px;
+    }
+    table{
+        width: 80%;
+    }
+    .centerbd{
+        margin-right: 0px;
+    }
+}
+@media (max-width: 370px){
+    .centerbd{
+        margin-right: 15px;
+    }
+    .header{
+        align-items: center;
+    }
+}
+@media (max-width: 300px){
+    table{
+        width: 70%;
+    }
+    .centerbd{
+        margin-left: 57px;
+    }
+    .header{
+        align-items: center;
+    }
+    footer{
+        width: 115%;
+    }
+}
+@media (max-width: 275px){
+    .main{
+        margin-left: 30px;
+    }
+    .centerbd{
+        margin-right: 5px;
+    }
+    footer{
+        width: 115%;
+    }
+}
